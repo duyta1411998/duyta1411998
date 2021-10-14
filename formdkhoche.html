@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns = "http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content = "text/html; charset= utf-8"/>
+    <title>Form đăng ký học hè</title>
+    <style type = "text/css">
+    #formdk {width: 400px; margin: 0 auto;
+            background: #036; color: white:}
+    h2 {letter-spacing: 0.2em; font-size: 1.2em; text-align: center; line-height: 2em;}
+    label {margin-left: 10px; font-style: italic;}
+    #ht:focus {background: #FF6;}
+    .rightbutton {text-align: right;}
+    .top {vertical-align: text-top;}
+    </style>
+</head>
+<body>
+    <form id = "formdk" method = "get" action = "#">
+        <h2>Form đăng ký học hè</h2>
+        <table>
+            <tr>
+                <td><label for id = "ht">Họ tên:</label></td>
+                <td><input type = "text" id = "ht"/></td>
+            </tr>
+            <tr>
+                <td><label for id = "lop">Lớp</label></td>
+                <td><select name = "lop">
+                    <option>11B1</option>
+                    <option>11B2</option>
+                    <option>11B3</option>
+                    <option>11B4</option>
+                    <option>11B5</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for id = "gt">Giới tính</label></td>
+                <td>
+                    <input type = "radio" value = "Nam" id = "Nam" name = "gt" checked = "checked"/>
+                    <label for id = "Nam">Nam</label>
+                    <input type = "radio" value = "Nu" id = "Nu" name = "gt"/>
+                    <label for id = "Nu">Nữ</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for id = "mon">Môn học:</label></td>
+                <td>
+                    <input type = "checkbox" id = "W"/>
+                    <label for id = "W">NNTKW</label>
+                    <br/>
+                    <input type = "checkbox" id = "C"/>
+                    <label for id = "C">CSLT</label>
+                    <br/>
+                    <input type = "checkbox" id = "H"/>
+                    <label for id = "H">TTHCM</label> 
+                </td>
+            </tr>
+            <tr>
+                <td class = "top"><label for id = "gopy">Góp ý:</label></td>
+                <td>
+                    <textarea cols = "30" rows = "10" id = "gopy">Nhập ý kiến vào đây
+                    </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan = "2" class = "rightbutton">
+                    <input type = "reset" value = "Hủy bỏ"/>
+                    <input type = "submit" value = "Đăng ký"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
